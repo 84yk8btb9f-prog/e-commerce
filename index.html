@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeWear - Premium Fashion Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ecommerce-style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="gr">ΕΛ</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>LuxeWear</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active" data-en="Home" data-gr="Αρχική">Home</a></li>
+                <li><a href="ecommerce-shop.html" data-en="Shop" data-gr="Κατάστημα">Shop</a></li>
+                <li><a href="ecommerce-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                <li><a href="ecommerce-contact.html" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="ecommerce-cart.html" class="icon-btn cart-btn" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <button class="search-close">&times;</button>
+            <input type="text" class="search-input" placeholder="Search products..." data-en-placeholder="Search products..." data-gr-placeholder="Αναζήτηση προϊόντων...">
+            <button class="search-submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 data-en="Elevate Your Style" data-gr="Ανέβασε το Στυλ σου">Elevate Your Style</h1>
+            <p data-en="Discover premium fashion designed for the modern individual" data-gr="Ανακαλύψτε premium μόδα σχεδιασμένη για τον σύγχρονο άνθρωπο">
+                Discover premium fashion designed for the modern individual
+            </p>
+            <a href="ecommerce-shop.html" class="btn btn-primary">
+                <span data-en="Shop Collection" data-gr="Δείτε τη Συλλογή">Shop Collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800" alt="Hero fashion">
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Shop by Category" data-gr="Αγορά ανά Κατηγορία">Shop by Category</h2>
+            <div class="categories-grid">
+                <a href="ecommerce-shop.html?category=women" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400" alt="Women">
+                    <div class="category-overlay">
+                        <h3 data-en="Women" data-gr="Γυναίκες">Women</h3>
+                        <span data-en="Shop Now" data-gr="Αγορά Τώρα">Shop Now <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="ecommerce-shop.html?category=men" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=400" alt="Men">
+                    <div class="category-overlay">
+                        <h3 data-en="Men" data-gr="Άνδρες">Men</h3>
+                        <span data-en="Shop Now" data-gr="Αγορά Τώρα">Shop Now <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="ecommerce-shop.html?category=accessories" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3 data-en="Accessories" data-gr="Αξεσουάρ">Accessories</h3>
+                        <span data-en="Shop Now" data-gr="Αγορά Τώρα">Shop Now <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Featured Products" data-gr="Προτεινόμενα Προϊόντα">Featured Products</h2>
+                <a href="ecommerce-shop.html" class="view-all" data-en="View All" data-gr="Δείτε Όλα">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-id="1" data-name="Premium Leather Jacket" data-price="189.99" data-category="women">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400" alt="Leather Jacket">
+                        <div class="product-badge" data-en="New" data-gr="Νέο">New</div>
+                        <button class="quick-add" data-en="Quick Add" data-gr="Γρήγορη Προσθήκη">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Leather Jacket</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">€189.99</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2" data-name="Classic White Shirt" data-price="59.99" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400" alt="White Shirt">
+                        <button class="quick-add" data-en="Quick Add" data-gr="Γρήγορη Προσθήκη">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic White Shirt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="product-price">€59.99</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3" data-name="Designer Handbag" data-price="249.99" data-category="accessories">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400" alt="Handbag">
+                        <div class="product-badge sale" data-en="Sale" data-gr="Έκπτωση">Sale</div>
+                        <button class="quick-add" data-en="Quick Add" data-gr="Γρήγορη Προσθήκη">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Handbag</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="sale-price">€249.99</span>
+                            <span class="original-price">€349.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4" data-name="Slim Fit Jeans" data-price="89.99" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Jeans">
+                        <button class="quick-add" data-en="Quick Add" data-gr="Γρήγορη Προσθήκη">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Slim Fit Jeans</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(31)</span>
+                        </div>
+                        <div class="product-price">€89.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3 data-en="Free Shipping" data-gr="Δωρεάν Αποστολή">Free Shipping</h3>
+                    <p data-en="On orders over €100" data-gr="Για παραγγελίες άνω των €100">On orders over €100</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-undo"></i>
+                    <h3 data-en="Easy Returns" data-gr="Εύκολες Επιστροφές">Easy Returns</h3>
+                    <p data-en="30-day return policy" data-gr="Πολιτική επιστροφών 30 ημερών">30-day return policy</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-lock"></i>
+                    <h3 data-en="Secure Payment" data-gr="Ασφαλής Πληρωμή">Secure Payment</h3>
+                    <p data-en="100% secure transactions" data-gr="100% ασφαλείς συναλλαγές">100% secure transactions</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-headset"></i>
+                    <h3 data-en="24/7 Support" data-gr="Υποστήριξη 24/7">24/7 Support</h3>
+                    <p data-en="Dedicated customer service" data-gr="Αφοσιωμένη εξυπηρέτηση">Dedicated customer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 data-en="Join Our Community" data-gr="Ενταχθείτε στην Κοινότητά μας">Join Our Community</h2>
+                <p data-en="Subscribe to get exclusive offers and early access to new collections" data-gr="Εγγραφείτε για αποκλειστικές προσφορές και πρώτη πρόσβαση στις νέες συλλογές">
+                    Subscribe to get exclusive offers and early access to new collections
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-gr-placeholder="Εισάγετε το email σας" required>
+                    <button type="submit" class="btn btn-primary" data-en="Subscribe" data-gr="Εγγραφή">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>LuxeWear</span>
+                    </div>
+                    <p data-en="Premium fashion for the modern lifestyle. Crafted with care, designed with passion." data-gr="Premium μόδα για τον σύγχρονο τρόπο ζωής.">
+                        Premium fashion for the modern lifestyle. Crafted with care, designed with passion.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Shop" data-gr="Κατάστημα">Shop</h3>
+                    <ul>
+                        <li><a href="ecommerce-shop.html?category=women" data-en="Women's Fashion" data-gr="Γυναικεία Μόδα">Women's Fashion</a></li>
+                        <li><a href="ecommerce-shop.html?category=men" data-en="Men's Fashion" data-gr="Ανδρική Μόδα">Men's Fashion</a></li>
+                        <li><a href="ecommerce-shop.html?category=accessories" data-en="Accessories" data-gr="Αξεσουάρ">Accessories</a></li>
+                        <li><a href="ecommerce-shop.html" data-en="New Arrivals" data-gr="Νέες Αφίξεις">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Customer Service" data-gr="Εξυπηρέτηση">Customer Service</h3>
+                    <ul>
+                        <li><a href="#" data-en="Contact Us" data-gr="Επικοινωνία">Contact Us</a></li>
+                        <li><a href="#" data-en="Shipping Info" data-gr="Πληροφορίες Αποστολής">Shipping Info</a></li>
+                        <li><a href="#" data-en="Returns" data-gr="Επιστροφές">Returns</a></li>
+                        <li><a href="#" data-en="FAQ" data-gr="Συχνές Ερωτήσεις">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="About" data-gr="Σχετικά">About</h3>
+                    <ul>
+                        <li><a href="ecommerce-about.html" data-en="Our Story" data-gr="Η Ιστορία μας">Our Story</a></li>
+                        <li><a href="#" data-en="Sustainability" data-gr="Βιωσιμότητα">Sustainability</a></li>
+                        <li><a href="#" data-en="Careers" data-gr="Καριέρα">Careers</a></li>
+                        <li><a href="#" data-en="Privacy Policy" data-gr="Πολιτική Απορρήτου">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeWear. <span data-en="All rights reserved." data-gr="Όλα τα δικαιώματα διατηρούνται.">All rights reserved.</span></p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ecommerce-script.js"></script>
+</body>
+</html>
