@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | LuxeWear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ecommerce-style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="gr">ΕΛ</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>LuxeWear</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-gr="Αρχική">Home</a></li>
+                <li><a href="ecommerce-shop.html" data-en="Shop" data-gr="Κατάστημα">Shop</a></li>
+                <li><a href="ecommerce-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                <li><a href="ecommerce-contact.html" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="ecommerce-cart.html" class="icon-btn cart-btn active" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <button class="search-close">&times;</button>
+            <input type="text" class="search-input" placeholder="Search products..." data-en-placeholder="Search products..." data-gr-placeholder="Αναζήτηση προϊόντων...">
+            <button class="search-submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Shopping Cart" data-gr="Καλάθι Αγορών">Shopping Cart</h1>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="cart-container" id="cartContent">
+            <!-- Content will be dynamically loaded by JavaScript -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>LuxeWear</span>
+                    </div>
+                    <p data-en="Premium fashion for the modern lifestyle. Crafted with care, designed with passion." data-gr="Premium μόδα για τον σύγχρονο τρόπο ζωής.">
+                        Premium fashion for the modern lifestyle. Crafted with care, designed with passion.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Shop" data-gr="Κατάστημα">Shop</h3>
+                    <ul>
+                        <li><a href="ecommerce-shop.html?category=women" data-en="Women's Fashion" data-gr="Γυναικεία Μόδα">Women's Fashion</a></li>
+                        <li><a href="ecommerce-shop.html?category=men" data-en="Men's Fashion" data-gr="Ανδρική Μόδα">Men's Fashion</a></li>
+                        <li><a href="ecommerce-shop.html?category=accessories" data-en="Accessories" data-gr="Αξεσουάρ">Accessories</a></li>
+                        <li><a href="ecommerce-shop.html" data-en="New Arrivals" data-gr="Νέες Αφίξεις">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Customer Service" data-gr="Εξυπηρέτηση">Customer Service</h3>
+                    <ul>
+                        <li><a href="#" data-en="Contact Us" data-gr="Επικοινωνία">Contact Us</a></li>
+                        <li><a href="#" data-en="Shipping Info" data-gr="Πληροφορίες Αποστολής">Shipping Info</a></li>
+                        <li><a href="#" data-en="Returns" data-gr="Επιστροφές">Returns</a></li>
+                        <li><a href="#" data-en="FAQ" data-gr="Συχνές Ερωτήσεις">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="About" data-gr="Σχετικά">About</h3>
+                    <ul>
+                        <li><a href="ecommerce-about.html" data-en="Our Story" data-gr="Η Ιστορία μας">Our Story</a></li>
+                        <li><a href="#" data-en="Sustainability" data-gr="Βιωσιμότητα">Sustainability</a></li>
+                        <li><a href="#" data-en="Careers" data-gr="Καριέρα">Careers</a></li>
+                        <li><a href="#" data-en="Privacy Policy" data-gr="Πολιτική Απορρήτου">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeWear. <span data-en="All rights reserved." data-gr="Όλα τα δικαιώματα διατηρούνται.">All rights reserved.</span></p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ecommerce-script.js"></script>
+</body>
+</html>
